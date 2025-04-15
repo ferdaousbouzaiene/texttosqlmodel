@@ -1,7 +1,7 @@
 import gradio as gr
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
-model_path='ferdaous/mytexttosqlmodel'
+model_path='ferdaous/mytexttosqlmodel3'
 model = AutoModelForCausalLM.from_pretrained(
     model_path,  # after you push to HF
     torch_dtype=torch.float16,
