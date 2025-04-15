@@ -14,4 +14,5 @@ In this project, I fine-tuned an open-source LLaMA 3 model *(Llama-3.2-1B-Instru
 
 ## 🚀  Demo
 
-Try it here 👉 Hugging Face Space Link
+Try it here 👉 [Hugging Face Space Link
+](https://huggingface.co/spaces/ferdaous/texttosqlmodel)
