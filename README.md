@@ -16,3 +16,10 @@ In this project, I fine-tuned an open-source LLaMA 3 model *(Llama-3.2-1B-Instru
 
 Try it here 👉 [Hugging Face Space Link
 ](https://huggingface.co/spaces/ferdaous/texttosqlmodel)
+
+## Challenges & Limitations
+While building this project, I ran into a few technical challenges, some of them were regarding : Model Compatibility
+
+I used the Unsloth library to fine-tune LLaMA 3 efficiently in Colab. However, the model trained with Unsloth includes some custom optimizations that made it incompatible with direct loading and inference on Hugging Face Spaces, which expects models in standard formats.
+
+Therefore and to ensure compatibility with Hugging Face deployment, I used bitsandbytes (4-bit quantization) for parameter-efficient fine-tuning instead. This allowed the model to be saved and loaded with transformers for inference in the demo app.
